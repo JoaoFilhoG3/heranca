@@ -31,4 +31,10 @@ public class Funcionario extends Pessoa {
     public void mudarTrabalho(String novoSetor) {
         this.setor = novoSetor;
     }
+
+    @Override
+    public void fazerAniversario() {
+        System.out.println("Parabéns " + getNome()
+                + ", vá pa casa!");
+    }
 }

@@ -10,8 +10,6 @@ public class Aluno extends Pessoa {
         super(nome, idade, sexo);
         this.matricula = matricula;
         this.curso = curso;
-        
-       super.nome = "chico";
     }
 
     public int getMatricula() {
@@ -32,5 +30,11 @@ public class Aluno extends Pessoa {
 
     public void cancelarMatricula() {
         System.out.println("Matrícula cancelada.");
+    }
+
+    @Override
+    public void fazerAniversario() {
+        System.out.println("Parabéns " + getNome()
+                + ", tome um ponto na média!!!");
     }
 }

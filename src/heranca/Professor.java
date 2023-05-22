@@ -34,4 +34,11 @@ public class Professor extends Pessoa {
                 "Seu salário agora é: " + this.salario
         );
     }
+
+    @Override
+    public void fazerAniversario() {
+        System.out.println("Parabéns " + getNome()
+                + ", você recebeu um aumento de R$100!");
+        this.salario = this.salario + 100;
+    }
 }

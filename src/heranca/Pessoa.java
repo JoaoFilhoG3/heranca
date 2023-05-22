@@ -1,6 +1,6 @@
 package heranca;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     protected String nome;
     protected int idade;
@@ -36,7 +36,5 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public void fazerAniversario() {
-        System.out.println("Parabens " + this.nome);
-    }
+    public abstract void fazerAniversario();
 }
